@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=roboto">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
     .subscribe-button {
-       color: white;    
-       padding: 10px 37px;
+       color: #ffffff;    
+       padding: 10px 30px;
        border-radius: 5px;
-       border: 10px none;
        margin: 0px 10px;
+       margin-top: 10px;
        background-color: #a2c744;
-       box-shadow: 0 -3px #769032 inset;
+       box-shadow: 0 -3px #20331b inset;
        cursor: pointer;
-       font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       text-align: center;   
     }
-    .subscribe-button:hover {background: #769032;}
-    .subscribe-button:active {background: #a2c744; box-shadow: 0 -3px #769032 inset;}
-   </style>
-   <style>
+    .subscribe-button:hover {background: #20331b;}
+    .subscribe-button:active {background: #a2c744; box-shadow: 0 -3px #20331b inset;}
    .сourses {
        color: #2270c8;
-       padding-top: 5px;
+       
        padding: 0px 10px;
        cursor: pointer;
-       font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
    .сourses:hover {color: #113c6d;}
    .сourses:active {color: #2270c8;}
+   .subscribe-button-under {
+      border: 2px solid #62a3da; 
+      margin: 5px 10px; 
+      margin-bottom: 10px;
+      cursor: pointer; 
+      border-radius: 5px;
+      color: #62a3da; padding: 10px; 
+      text-align: center;
+   }
    </style>
 </head>
-<body style="margin: 0px; background-color: #eceeec;" >
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=roboto">
+<body style="margin: 0px; background-color: #eceeec; font-family: Roboto, sans-serif;" >
 <header style="background-color: #373937; padding: 10px;">
-<div style="line-height: 28px; font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">  
+<div style="line-height: 28px; font-family: Roboto, sans-serif;">  
     <a href="https://www.gomel.it-academy.by/" 
        style="color: white; text-decoration: none; font-size: 25px; margin: 10px; word-spacing: -5px;">Trainings &reg;</a>
     <a href="https://www.gomel.it-academy.by/" 
@@ -45,22 +51,20 @@
        style="color: white; text-decoration: none;">FAQ</a>
 </div>
 </header>
-<main>
-   <div style="background-image: url(https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1700); 
-               min-height: calc(100vh - 52px); background-position: cover; background-repeat: no-repeat;
-               background-attachment: fixed; display: flex; align-items: center; justify-content: left;">
-    <div style="font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                color: white; font-size: 80px; width: 600px; margin-left: 220px; word-spacing: 10px;">
+<main style="background-image: url(https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1700);
+             background-size: cover; background-repeat: no-repeat;">
+   <div style="min-height: calc(100vh - 52px); background-position: cover; background-repeat: no-repeat;
+               background-attachment: fixed; display: flex; align-items: center; justify-content: left;
+               color: white; font-size: 80px; width: 600px; margin-left: 220px; word-spacing: 10px;">
                 Start your career 
-   </div>
    </div>             
 </main>
-<footer style="margin: 0px 20px;"> 
-    <h2 style="text-align:center; font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+<footer> 
+   <section style="margin: 0px 20px;">
+    <h2 style="text-align:center;">
                TRAININGS</h2>
     <hr>
-    <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-               text-align: justify; text-indent: 20px;">
+    <div style="text-align: justify; text-indent: 20px;">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto molestias enim odio iste eligendi provident earum aut expedita dicta, neque dignissimos porro eum rerum nemo corrupti eos maxime debitis cupiditate!
       Deserunt aliquam dicta quidem, ratione ullam quasi quis obcaecati ad ipsa similique nulla? Possimus velit animi sint nihil dolorem eius, tempora quis voluptate quod blanditiis. Velit libero sint architecto impedit!
       Necessitatibus ab neque, tempora inventore voluptatem repellendus dolorum nulla dolorem porro obcaecati temporibus minima provident deserunt veniam nisi rem quibusdam consequuntur dicta voluptates! Possimus pariatur doloribus, culpa recusandae perspiciatis illum!
@@ -82,12 +86,10 @@
       Vel incidunt dolorum obcaecati, hic rem quaerat quasi quo officia esse voluptate, autem, nostrum aliquid accusantium? Tempora veritatis impedit, vel tenetur sapiente repudiandae et culpa facilis? Repellat, aspernatur natus! Dicta.
       Odio commodi eum repellendus dolores velit delectus, esse voluptatibus quam impedit magni quisquam maiores quidem voluptatem minima. At cupiditate sit animi asperiores, eum ipsum enim doloribus provident quam corporis mollitia!
     </div>
-    <h2 style="text-align:center; margin: 25px;
-               font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-                UPCOMING COURSES</h2>
+    <h2 style="text-align:center; margin: 25px;">UPCOMING COURSES</h2>
     <hr>
-    <table style="border-collapse: collapse; border-radius: 5px; margin-top: 10px; margin-bottom: 10px; width: 100%; background-color: white; table-layout: fixed;
-                  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+    <table style="border-collapse: collapse; border-radius: 5px; margin-top: 10px; margin-bottom: 10px; 
+                  width: 100%; background-color: white; table-layout: fixed;">
    <tr style="border-bottom: 1px grey solid;">
       <td> 
 <div class="сourses"> Программирование на GO</div>
@@ -101,12 +103,8 @@
             <span style="font-weight: 700;">Осталось</span>10 из 20 мест</div>
       </td>
       <td style="text-align: right; width: 180px;">
-         <br>
-<div class="subscribe-button">Записаться</div>
-      <div style="border: 2px solid #62a3da; margin: 0px 10px; 
-                  margin-top: 15px; margin-bottom: 10px; cursor: pointer; border-radius: 5px;">
-      <div style="color: #62a3da; padding: 10px;">Программа курса</div> 
-      </div>
+<div class="subscribe-button">Записаться</div>  
+<div class="subscribe-button-under">Программа курса</div> 
    </tr>
    <tr style="border-bottom: 1px grey solid;">
       <td>
@@ -121,12 +119,8 @@
             <span style="font-weight: 700;">Осталось</span> 8 из 12 мест</div>
       </td>
       <td style="text-align: right;">
-         <br>
-         <div class="subscribe-button">Записаться</div>
-      <div style="border: 2px solid #62a3da; margin: 0px 10px; 
-                  margin-top: 15px; margin-bottom: 10px; cursor: pointer; border-radius: 5px;">
-      <div style="color: #62a3da; padding: 10px;">Программа курса</div> 
-      </div>
+ <div class="subscribe-button">Записаться</div>
+ <div class="subscribe-button-under">Программа курса</div> 
    </tr>
    <tr>
       <td>
@@ -141,15 +135,12 @@
            <span style="font-weight: 700;">Осталось</span> 4 из 10 мест</div>
       </td>
       <td style="text-align: right;">
-         <br>
        <div style="border: 10px none; cursor: pointer;"> 
-         <div class="subscribe-button">Записаться</div>
-      <div style="border: 2px solid #62a3da; margin: 0px 10px; 
-                  margin-top: 15px; margin-bottom: 10px; cursor: pointer; border-radius: 5px;">
-      <div style="color: #62a3da; padding: 10px;">Программа курса</div> 
-      </div>
+<div class="subscribe-button">Записаться</div>
+<div class="subscribe-button-under">Программа курса</div>   
    </tr>
     </table>
+   </section>
 </footer>
 </body>
 </html>
