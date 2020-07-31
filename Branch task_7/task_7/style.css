@@ -1,0 +1,56 @@
+/* CSS Document */
+.headers {
+    text-align:center; 
+    margin: 25px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.block {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 22%;
+    height: 30px;
+    min-width: 200px;
+    float: left;
+    padding: 10px; 
+    margin: 10px;
+    margin-left: 2px;
+    background-color: white;
+    color: #62a3da;
+    line-height: 30px;
+    overflow: auto;
+}
+.block:hover {color: #113c6d; 
+              box-shadow:1px 8px 8px 0px rgba(0,0,0,0.45);
+              text-decoration: underline;
+              transition-duration: .2s; 
+}
+.block:active {color: #c82222;}
+.subscribe-button {
+    color: #ffffff;    
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 0px 10px;
+    margin-top: 10px;
+    background-color: #a2c744;
+    box-shadow: 0 -3px #20331b inset;
+    cursor: pointer;
+    text-align: center;   
+ }
+ .subscribe-button:hover {background: #20331b;}
+ .subscribe-button:active {background: #a2c744; box-shadow: 0 -3px #20331b inset;}
+.сourses {
+    color: #2270c8;
+    
+    padding: 0px 10px;
+    cursor: pointer;
+   }
+.сourses:hover {color: #113c6d;}
+.сourses:active {color: #2270c8;}
+.subscribe-button-under {
+   border: 2px solid #62a3da; 
+   margin: 5px 10px; 
+   margin-bottom: 10px;
+   cursor: pointer; 
+   border-radius: 5px;
+   color: #62a3da; padding: 10px; 
+   text-align: center;
+}
