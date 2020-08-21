@@ -1,0 +1,178 @@
+.body {
+    margin: 0px; 
+    background-color: #eceeec; 
+    font-family: Roboto, sans-serif;  
+}
+.header {
+    background-color: #373937;
+    padding: 10px;
+}
+.main_href {
+    line-height: 28px; 
+    font-family: Roboto, sans-serif;
+}
+.href {
+    color: white;
+    text-decoration: none;
+}
+.href_blog {
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+.href_list {
+    margin-left: 30px;
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+.href_trainings {
+    font-size: 25px; 
+    margin: 10px; 
+    word-spacing: -5px;
+    color: white;
+    text-decoration: none;
+}
+.picture {
+    background-image: url(https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1700);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+.career {
+    min-height: calc(100vh - 52px);
+    background-attachment: fixed; 
+    display: flex; align-items: center; 
+    justify-content: left;
+    color: white; 
+    font-size: 80px; 
+    width: 600px;
+    margin-left: 220px; 
+    word-spacing: 10px;
+}
+.section {
+    margin: 0px 20px;
+}
+.headers {
+    text-align:center; 
+    margin: 25px;
+    font-family: Roboto, sans-serif;
+}
+.table {
+    border-collapse: collapse; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    width: 100%;
+    background-color: white; 
+    table-layout: fixed;
+}
+.block {
+    font-family: Roboto, sans-serif;
+    width: 22%;
+    height: 30px;
+    min-width: 200px;
+    float: left;
+    padding: 10px; 
+    margin: 10px;
+    margin-left: 2px;
+    background-color: white;
+    color: #62a3da;
+    line-height: 30px;
+    overflow: auto;
+}
+.block:hover {color: #113c6d; 
+              box-shadow:1px 8px 8px 0px rgba(0,0,0,0.45);
+              text-decoration: underline;
+              transition-duration: .2s; 
+}
+
+.subscribe-button {
+    color: #ffffff;    
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 0px 10px;
+    margin-top: 10px;
+    background-color: #a2c744;
+    box-shadow: 0 -3px #20331b inset;
+    cursor: pointer;
+    text-align: center;   
+  
+ }
+ .subscribe-button:hover {background: #20331b;}
+ .subscribe-button:active {background: #a2c744; box-shadow: 0 -3px #20331b inset;}
+ .сourses {
+    color: #2270c8;
+    padding: 0px 10px;
+    cursor: pointer;
+   }
+.сourses:hover {color: #113c6d;}
+.сourses:active {color: #2270c8;}
+.subscribe-button-under {
+   border: 2px solid #62a3da; 
+   margin: 5px 10px; 
+   margin-bottom: 10px;
+   cursor: pointer; 
+   border-radius: 5px;
+   color: #62a3da; 
+   padding: 10px; 
+   text-align: center;
+ 
+}
+.number {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.clock {
+    padding: 0px 10px; 
+    font-size: 12px;
+}
+.lorem {
+    text-align: justify; 
+    text-indent: 20px;
+}
+.colom {
+    border-bottom: 1px grey solid;
+}
+.main_colom {
+    text-align: left;
+}
+.prise {
+    font-weight: 600;
+}
+.month {
+    padding: 5px 0px; 
+    font-size: 12px;
+}
+.students {
+    padding-bottom: 5px; 
+    font-size: 12px;
+}
+.right_colom {
+   text-align: right;
+   width: 180px;
+    
+}
+.clear {
+    clear: both;
+}
+.span {
+    font-weight: 700;
+}
+@media (max-width: 830px){
+    .career {
+        display: flex;
+        text-align: left;
+        justify-content: left;
+    }
+}
+@media (max-width: 830px){
+    .section {
+       width: 812px;
+    }
+}
+@media (max-width: 830px){
+    .body {
+       position: absolute;
+    }
+}
