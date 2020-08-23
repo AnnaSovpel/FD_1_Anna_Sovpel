@@ -1,3 +1,4 @@
+/* CSS Document */
 .body {
     margin: 0px; 
     background-color: #eceeec; 
@@ -37,23 +38,25 @@
     background-image: url(https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1700);
     background-size: cover; 
     background-repeat: no-repeat;
-    max-width: 100%;
 }
 .career {
     min-height: calc(100vh - 52px);
-    background-attachment: fixed; 
-    display: flex; align-items: center; 
-    justify-content: left;
+    background-attachment: fixed;
     color: white; 
     font-size: 80px; 
-    width: 600px;
-    margin-left: 220px; 
     word-spacing: 10px;
+    display:flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.career_word {
+    width: 380px; 
+    padding-right: 300px;
 }
 .section {
     margin: 0px 20px;
 }
-.headers {
+ h2 {
     text-align:center; 
     margin: 25px;
     font-family: Roboto, sans-serif;
@@ -61,11 +64,14 @@
 .table {
     border-collapse: collapse; 
     border-radius: 5px; 
-    margin-top: 10px; 
-    margin-bottom: 10px; 
     width: 100%;
     background-color: white; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
     table-layout: fixed;
+}
+.table_adaptiv {
+    max-width: 100%;
 }
 .block {
     font-family: Roboto, sans-serif;
@@ -81,10 +87,11 @@
     line-height: 30px;
     overflow: auto;
 }
-.block:hover {color: #113c6d; 
-              box-shadow:1px 8px 8px 0px rgba(0,0,0,0.45);
-              text-decoration: underline;
-              transition-duration: .2s; 
+.block:hover {
+    color: #113c6d; 
+    box-shadow:1px 8px 8px 0px rgba(0,0,0,0.45);
+    text-decoration: underline;
+    transition-duration: .2s; 
 }
 
 .subscribe-button {
@@ -134,6 +141,7 @@
 .colom {
     border-bottom: 1px grey solid;
 }
+
 .main_colom {
     text-align: left;
 }
@@ -151,7 +159,6 @@
 .right_colom {
    text-align: right;
    width: 180px;
-    
 }
 .clear {
     clear: both;
@@ -159,20 +166,29 @@
 .span {
     font-weight: 700;
 }
-@media (max-width: 830px){
-    .career {
-        display: flex;
-        text-align: left;
-        justify-content: left;
+@media (max-width: 750px){
+    .career_word{
+        padding: 0px;
+        font-size: 50px;
+        text-align: center;
     }
 }
-@media (max-width: 830px){
-    .section {
-       width: 812px;
+@media (max-width: 375px){
+    .header {
+        font-size: 15px;
     }
 }
-@media (max-width: 830px){
-    .body {
-       position: absolute;
+@media (max-width: 1024px){
+    .table {
+        table-layout: auto;
+        overflow: auto;
+        max-width: 100%;
+    }
+}
+@media (min-width: 1024px){
+    .table {
+        table-layout: auto;
+        overflow: auto;
+        max-width: 100%;
     }
 }

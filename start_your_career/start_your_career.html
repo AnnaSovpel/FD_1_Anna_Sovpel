@@ -2,67 +2,30 @@
 <html lang="zxx">
 <head>
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=roboto">
+   <link rel="stylesheet" href="style.css" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-    .subscribe-button {
-       color: #ffffff;    
-       padding: 10px 30px;
-       border-radius: 5px;
-       margin: 0px 10px;
-       margin-top: 10px;
-       background-color: #a2c744;
-       cursor: pointer;
-       text-align: center;   
-    }
-    .subscribe-button:hover {background: #20331b;}
-    .subscribe-button:active {
-       background: #a2c744; 
-       border-bottom:  #20331b;
-   }
-   .сourses {
-       color: #2270c8;
-       
-       padding: 0px 10px;
-       cursor: pointer;
-   }
-   .сourses:hover {color: #113c6d;}
-   .сourses:active {color: #2270c8;}
-   .subscribe-button-under {
-      border: 2px solid #62a3da; 
-      margin: 5px 10px; 
-      margin-bottom: 10px;
-      cursor: pointer; 
-      border-radius: 5px;
-      color: #62a3da; padding: 10px; 
-      text-align: center;
-   }
-   </style>
 </head>
-<body style="margin: 0px; background-color: #eceeec; font-family: Roboto, sans-serif;" >
-<header style="background-color: #373937; padding: 10px;">
-    <a href="https://www.gomel.it-academy.by/" 
-       style="color: white; text-decoration: none; font-size: 25px; margin: 10px; word-spacing: -5px;">Trainings &reg;</a>
-    <a href="https://www.gomel.it-academy.by/" 
-       style="color: white; text-decoration: none; margin-left: 30px; margin-right: 15px;">List</a>
-    <a href="https://www.gomel.it-academy.by/" 
-       style="color: white; text-decoration: none; margin-right: 15px;">Blog</a>
-    <a href="https://www.gomel.it-academy.by/" 
-       style="color: white; text-decoration: none;">FAQ</a>
+<body class="body">
+<header class="header">
+   <div class="main_href">  
+      <a href="https://www.gomel.it-academy.by/" class="href_trainings">Trainings &reg;</a>
+      <a href="https://www.gomel.it-academy.by/" class="href_list">List</a>
+      <a href="https://www.gomel.it-academy.by/" class="href_blog">Blog</a>
+      <a href="https://www.gomel.it-academy.by/" class="href">FAQ</a>
+   </div>
 </header>
-<main style="background-image: url(https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1700);
-             background-size: cover; background-repeat: no-repeat;">
-   <div style="min-height: calc(100vh - 52px); background-attachment: fixed; display: flex; align-items: center; justify-content: left;
-               color: white; font-size: 80px; width: 600px; margin-left: 220px; word-spacing: 10px;">
-                Start your career 
-   </div>             
+<main class="picture">
+   <div class="career">
+     <div class="career_word"> Start your career</div>      
+   </div>   
 </main>
-   <section style="margin: 0px 20px;">
-    <h2 style="text-align:center;">
-               TRAININGS</h2>
+<footer> 
+   <section class="section">
+    <h2>TRAININGS</h2>
     <hr>
-    <div style="text-align: justify; text-indent: 20px;">
+    <div class="lorem">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto molestias enim odio iste eligendi provident earum aut expedita dicta, neque dignissimos porro eum rerum nemo corrupti eos maxime debitis cupiditate!
       Deserunt aliquam dicta quidem, ratione ullam quasi quis obcaecati ad ipsa similique nulla? Possimus velit animi sint nihil dolorem eius, tempora quis voluptate quod blanditiis. Velit libero sint architecto impedit!
       Necessitatibus ab neque, tempora inventore voluptatem repellendus dolorum nulla dolorem porro obcaecati temporibus minima provident deserunt veniam nisi rem quibusdam consequuntur dicta voluptates! Possimus pariatur doloribus, culpa recusandae perspiciatis illum!
@@ -84,58 +47,67 @@
       Vel incidunt dolorum obcaecati, hic rem quaerat quasi quo officia esse voluptate, autem, nostrum aliquid accusantium? Tempora veritatis impedit, vel tenetur sapiente repudiandae et culpa facilis? Repellat, aspernatur natus! Dicta.
       Odio commodi eum repellendus dolores velit delectus, esse voluptatibus quam impedit magni quisquam maiores quidem voluptatem minima. At cupiditate sit animi asperiores, eum ipsum enim doloribus provident quam corporis mollitia!
     </div>
-    <h2 style="text-align:center; margin: 25px;">UPCOMING COURSES</h2>
+    <h2>DEMANDED PROGRAMS</h2>
     <hr>
-    <table style="border-collapse: collapse; border-radius: 5px; margin-top: 10px; margin-bottom: 10px; 
-                  width: 100%; background-color: white; table-layout: fixed;">
-   <tr style="border-bottom: 1px grey solid;">
+         <div class="block">Programming</div>
+         <div class="block">Testing</div>
+         <div class="block">Business analysis</div>
+         <div class="block">Trainig courses</div>
+         <div class="block">Web design and computer graphics</div>
+         <div class="block">Marketing & Sales</div>
+         <div class="block">System and network administration</div>
+         <div class="clear"></div>
+    <h2>UPCOMING COURSES</h2>
+    <hr>
+    <div class="table"> 
+    <table class="table">
+    <tr class="colom">
       <td> 
-<div class="сourses"> Программирование на GO</div>
-         <div style="padding: 5px 10px; font-size: 12px;">20.08.2020-20.12.2020</div>
-         <div style="padding: 0px 10px; font-size: 12px;">Занятия вторинк и четверг с 18:30 до 20:30</div>
+         <div class="сourses"> Программирование на GO</div>
+         <div class="number">20.08.2020-20.12.2020</div>
+         <div class="clock">Занятия вторинк и четверг с 18:30 до 20:30</div>
       </td>
-      <td style="text-align: left;">
-         <div style="font-weight: 600;">755 BYN</div> 
-         <div style="padding: 5px 0px; font-size: 12px;">128 уч.ч. (три месяца)</div>
-         <div style="padding-bottom: 5px; font-size: 12px;"> 
-            <span style="font-weight: 700;">Осталось</span>10 из 20 мест</div>
+      <td class="main_colom">
+         <div class="prise">755 BYN</div> 
+         <div class="month">128 уч.ч. (три месяца)</div>
+         <div class="students"><span class="span">Осталось</span>10 из 20 мест</div>
       </td>
-      <td style="text-align: right; width: 180px;">
-<div class="subscribe-button">Записаться</div>  
-<div class="subscribe-button-under">Программа курса</div> 
+      <td class="right_colom">
+         <div class="subscribe-button">Записаться</div>  
+         <div class="subscribe-button-under">Программа курса</div> 
    </tr>
-   <tr style="border-bottom: 1px grey solid;">
+   <tr class="colom">
       <td>
         <div class="сourses">JavaScript</div> 
-        <div style="padding: 5px 10px; font-size: 12px;">01.09.2020-20.12.2020</div>
-        <div style="padding: 0px 10px; font-size: 12px;">Занятия вторинк и пятница с 18:30 до 21:20</div>
+        <div class="number">01.09.2020-20.12.2020</div>
+        <div class="clock">Занятия вторинк и пятница с 18:30 до 21:20</div>
       </td>
-      <td style="text-align: left;">
-         <div style="font-weight: 600;">859 BYN</div> 
-         <div style="padding: 5px 0px; font-size: 12px;">120 уч.ч. (три месяца)</div>
-         <div style="padding-bottom: 5px; font-size: 12px;"> 
-            <span style="font-weight: 700;">Осталось</span> 8 из 12 мест</div>
+      <td class="main_colom">
+         <div class="prise">859 BYN</div> 
+         <div class="month">120 уч.ч. (три месяца)</div>
+         <div class="students"><span class="span">Осталось</span> 8 из 12 мест</div>
       </td>
-      <td style="text-align: right;">
- <div class="subscribe-button">Записаться</div>
- <div class="subscribe-button-under">Программа курса</div> 
+      <td class="right_colom">
+         <div class="subscribe-button">Записаться</div>
+         <div class="subscribe-button-under">Программа курса</div> 
    </tr>
    <tr>
       <td>
          <div class="сourses">Web разработка</div>
-         <div style="padding: 5px 10px; font-size: 12px;">08.07.2020-10.10.2020</div>
-         <div style="padding: 0px 10px; font-size: 12px;">Занятия вторинк и пятница с 18:30 до 21:20</div>
+         <div class="number">08.07.2020-10.10.2020</div>
+         <div class="clock">Занятия вторинк и пятница с 18:30 до 21:20</div>
       </td>
-      <td style="text-align: left;">
-        <div style="font-weight: 600;">1240 BYN</div> 
-        <div style="padding: 5px 0px; font-size: 12px;">132 уч.ч. (три месяца)</div>
-        <div style="padding-bottom: 5px; font-size: 12px;"> 
-           <span style="font-weight: 700;">Осталось</span> 4 из 10 мест</div>
+      <td class="main_colom">
+        <div class="prise">1240 BYN</div> 
+        <div class="month">132 уч.ч. (три месяца)</div>
+        <div class="students"><span class="span">Осталось</span> 4 из 10 мест</div>
       </td>
-      <td style="text-align: right;">
-<div class="subscribe-button">Записаться</div>
-<div class="subscribe-button-under">Программа курса</div>   
+      <td class="right_colom">
+        <div class="subscribe-button">Записаться</div>
+        <div class="subscribe-button-under">Программа курса</div>   
     </table>
+   </div>
    </section>
+</footer>
 </body>
 </html>
