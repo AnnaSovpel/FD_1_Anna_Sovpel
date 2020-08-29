@@ -87,7 +87,6 @@
     background-image: url(./images/big-orange-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
     font-family: STMarire;
     border-top: 3px orange solid;
     border-bottom: 3px orange solid;
@@ -120,7 +119,7 @@
     display: flex; 
     justify-content: center;
 }
-.lorem > div  {
+.lorem > div {
     width: 250px;
     margin-top: 10px;
     margin-right: 25px;
@@ -244,7 +243,7 @@
 .menu {
     display: none;
 }
-.menu_word{
+.menu_word {
     text-decoration: none;
     color: gray;
     font-weight: bold;
@@ -296,11 +295,6 @@
     }
 }
 @media (max-width: 800px){
-    .body{
-    width: 800px;
-    }
-}
-@media (max-width: 800px){
     .footer{
     height: 100px;
     }
@@ -324,9 +318,34 @@
     width: 20%;
     }
 }
-
-@media (max-width: 800px){
+@media (max-width: 1024px){
     .header_section{
-    padding-left: 100px;
+    padding: 0;
+    }
+}
+@media (max-width: 600px){
+    .menu_word{
+    padding: 0;
+    }
+}
+@media (max-width: 600px){
+    .submit_main_flex{
+    margin-right: 0;
+    }
+}
+@media (max-width: 600px){
+    .input{
+    margin-right: 0;
+    }
+}
+@media (max-width: 600px){
+    .body{
+    width: 600px;
+    overflow-x: none;
+    }
+}
+@media (max-width: 600px){
+    .orange_word{
+    margin-left: 0;
     }
 }
