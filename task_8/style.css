@@ -1,0 +1,219 @@
+/* CSS Document */
+.the_main_square {
+     border: 1px solid grey;
+     width: 100px;
+     height: 100px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 30px;
+}
+.the_main_square_left {
+     float: left;
+     overflow: hidden;
+}
+.centre {
+     max-width: 306px; 
+     margin: 0 auto; 
+}
+input {
+     position: absolute;
+     display: none;
+}
+label {
+     position: relative;
+     text-align: center;
+     cursor: pointer;
+}
+
+[id$="x"]:checked ~ div > [for="col_x"] {
+     color: white;
+     background-color: orange;
+     padding: 30px;
+     border-radius: 50%;
+}
+#col_x:checked + #col_0:not(:checked) ~ div > [for="col_0"] {
+     display: none;
+}     
+[id$="0"]:checked ~ div > [for="col_0"] {
+     color: white;
+     background-color:green;
+     padding: 30px;
+     border-radius: 50%;
+
+}
+#col_x:not(checked) + #col_0:checked ~ div > [for="col_x"] {
+     display: none; 
+}
+
+#col1_x:checked ~ div > [for="col1_x"] {
+     color: white;
+     background-color: orange;
+     padding: 30px;
+     border-radius: 50%;
+}
+#col1_x:checked + #col1_0:not(:checked) ~ div > [for="col1_0"] {
+     display: none;
+}     
+#col1_0:checked ~ div > [for="col1_0"] {
+     color: white;
+     background-color:green;
+     padding: 30px;
+     border-radius: 50%;
+
+}
+#col1_x:not(checked) + #col1_0:checked ~ div > [for="col1_x"] {
+     display: none; 
+}
+
+#col2_x:checked ~ div > [for="col2_x"] {
+     color: white;
+     background-color: orange;
+     padding: 30px;
+     border-radius: 50%;
+}
+#col2_x:checked + #col2_0:not(:checked) ~ div > [for="col2_0"] {
+     display: none;
+}     
+#col2_0:checked ~ div > [for="col2_0"] {
+     color: white;
+     background-color:green;
+     padding: 30px;
+     border-radius: 50%;
+
+}
+#col2_x:not(checked) + #col2_0:checked ~ div > [for="col2_x"] {
+     display: none; 
+}
+
+#col3_x:checked ~ div > [for="col3_x"] {
+     color: white;
+     background-color: orange;
+     padding: 30px;
+     border-radius: 50%;
+}
+#col3_x:checked + #col3_0:not(:checked) ~ div > [for="col3_0"] {
+     display: none;
+}     
+#col3_0:checked ~ div > [for="col3_0"] {
+     color: white;
+     background-color:green;
+     padding: 30px;
+     border-radius: 50%;
+
+}
+#col3_x:not(checked) + #col3_0:checked ~ div > [for="col3_x"] {
+     display: none; 
+}
+
+#col4_x:checked ~ div > [for="col4_x"] {
+     color: white;
+     background-color: orange;
+     padding: 30px;
+     border-radius: 50%;
+}
+#col4_x:checked + #col4_0:not(:checked) ~ div > [for="col4_0"] {
+     display: none;
+}     
+#col4_0:checked ~ div > [for="col4_0"] {
+     color: white;
+     background-color:green;
+     padding: 30px;
+     border-radius: 50%;
+
+}
+#col4_x:not(checked) + #col4_0:checked ~ div > [for="col4_x"] {
+     display: none; 
+}
+
+#col5_x:checked ~ div > [for="col5_x"] {
+     color: white;
+     background-color: orange;
+     padding: 30px;
+     border-radius: 50%;
+}
+#col5_x:checked + #col5_0:not(:checked) ~ div > [for="col5_0"] {
+     display: none;
+}     
+#col5_0:checked ~ div > [for="col5_0"] {
+     color: white;
+     background-color:green;
+     padding: 30px;
+     border-radius: 50%;
+
+}
+#col5_x:not(checked) + #col5_0:checked ~ div > [for="col5_x"] {
+     display: none; 
+}
+
+#col6_x:checked ~ div > [for="col6_x"] {
+     color: white;
+     background-color: orange;
+     padding: 30px;
+     border-radius: 50%;
+}
+#col6_x:checked + #col6_0:not(:checked) ~ div > [for="col6_0"] {
+     display: none;
+}     
+#col6_0:checked ~ div > [for="col6_0"] {
+     color: white;
+     background-color:green;
+     padding: 30px;
+     border-radius: 50%;
+
+}
+#col6_x:not(checked) + #col6_0:checked ~ div > [for="col6_x"] {
+     display: none; 
+}
+
+#col7_x:checked ~ div > [for="col7_x"] {
+     color: white;
+     background-color: orange;
+     padding: 30px;
+     border-radius: 50%;
+}
+#col7_x:checked + #col7_0:not(:checked) ~ div > [for="col7_0"] {
+     display: none;
+}     
+#col7_0:checked ~ div > [for="col7_0"] {
+     color: white;
+     background-color:green;
+     padding: 30px;
+     border-radius: 50%;
+
+}
+#col7_x:not(checked) + #col7_0:checked ~ div > [for="col7_x"] {
+     display: none; 
+}
+
+#col8_x:checked ~ div > [for="col8_x"] {
+     color: white;
+     background-color: orange;
+     padding: 30px;
+     border-radius: 50%;
+}
+#col8_x:checked + #col8_0:not(:checked) ~ div > [for="col8_0"] {
+     display: none;
+}     
+#col8_0:checked ~ div > [for="col8_0"] {
+     color: white;
+     background-color:green;
+     padding: 30px;
+     border-radius: 50%;
+
+}
+#col8_x:not(checked) + #col8_0:checked ~ div > [for="col8_x"] {
+     display: none; 
+}
+
+.x_win {
+     color: white;
+     background-color: rebeccapurple;
+     display: none;
+}
+#col_x :checked ~ #col1_x :checked ~ #col2_x :checked ~ .x_win {
+    display: block;
+}
+
+
+
