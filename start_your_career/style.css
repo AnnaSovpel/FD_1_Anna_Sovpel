@@ -10,7 +10,6 @@
 }
 .main_href {
     line-height: 28px; 
-    font-family: Roboto, sans-serif;
 }
 .href {
     color: white;
@@ -18,21 +17,15 @@
 }
 .href_blog {
     margin-right: 15px;
-    color: white;
-    text-decoration: none;
 }
 .href_list {
     margin-left: 30px;
     margin-right: 15px;
-    color: white;
-    text-decoration: none;
 }
 .href_trainings {
     font-size: 25px; 
     margin: 10px; 
     word-spacing: -5px;
-    color: white;
-    text-decoration: none;
 }
 .picture {
     background-image: url(https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1700);
@@ -59,7 +52,6 @@
  h2 {
     text-align:center; 
     margin: 25px;
-    font-family: Roboto, sans-serif;
 }
 .table {
     border-collapse: collapse; 
@@ -74,7 +66,6 @@
     max-width: 100%;
 }
 .block {
-    font-family: Roboto, sans-serif;
     width: 22%;
     height: 30px;
     min-width: 200px;
@@ -124,7 +115,6 @@
    color: #62a3da; 
    padding: 10px; 
    text-align: center;
- 
 }
 .number {
     padding: 5px 10px;
@@ -166,18 +156,6 @@
 .span {
     font-weight: 700;
 }
-@media (max-width: 750px){
-    .career_word{
-        padding: 0px;
-        font-size: 50px;
-        text-align: center;
-    }
-}
-@media (max-width: 375px){
-    .header {
-        font-size: 15px;
-    }
-}
 @media (max-width: 1024px){
     .table {
         table-layout: auto;
@@ -190,5 +168,17 @@
         table-layout: auto;
         overflow: auto;
         max-width: 100%;
+    }
+}
+@media (max-width: 750px){
+    .career_word{
+        padding: 0px;
+        font-size: 50px;
+        text-align: center;
+    }
+}
+@media (max-width: 375px){
+    .header {
+        font-size: 15px;
     }
 }
