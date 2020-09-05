@@ -87,6 +87,7 @@
     background-image: url(./images/big-orange-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
     font-family: STMarire;
     border-top: 3px orange solid;
     border-bottom: 3px orange solid;
@@ -119,7 +120,7 @@
     display: flex; 
     justify-content: center;
 }
-.lorem > div {
+.lorem > div  {
     width: 250px;
     margin-top: 10px;
     margin-right: 25px;
@@ -243,7 +244,7 @@
 .menu {
     display: none;
 }
-.menu_word {
+.menu_word{
     text-decoration: none;
     color: gray;
     font-weight: bold;
@@ -251,7 +252,6 @@
     padding-right: 100px;
     font-size: 30px;
 }
-
 .menu_texst  {
     color: gray;
     font-weight: bold;
@@ -282,70 +282,104 @@
     background: #f2f2f2;
     cursor:pointer;
     }
-
+@media (max-width: 1024px){
+.name{
+    width: 20%;
+    }
+}
 @media (max-width: 900px){
-    .lorem_flex{
+.lorem_flex{
     margin-right: 0px;
     flex-wrap: wrap;
     }
 }
 @media (max-width: 900px){
-    .rabbit_flex{
+.rabbit_flex{
     flex-wrap: wrap;
-    }
-}
-@media (max-width: 800px){
-    .footer{
-    height: 100px;
     }
 }
 
 @media (max-width: 800px){
-    .sprite{
+.footer{
+    height: 100%;
+    }
+}
+
+@media (max-width: 800px){
+.sprite{
     display: none;
     }
 }
 @media (max-width: 800px){
-    .menu{
+.menu{
     display: block;
     text-decoration: none;
     font-size: 30px;
     color: orange;
     }
 }
-@media (max-width: 1024px){
-    .name{
-    width: 20%;
-    }
-}
-@media (max-width: 1024px){
-    .header_section{
-    padding: 0;
+@media (max-width: 800px){
+.header_section{
+    padding-left: 100px;
+    padding-right: 0px;
     }
 }
 @media (max-width: 600px){
-    .menu_word{
-    padding: 0;
+.big_orange_word_flex{
+    width: 300px;
     }
 }
 @media (max-width: 600px){
-    .submit_main_flex{
-    margin-right: 0;
+.like{
+    width: 200px;
+    font-size: 15px;
+    text-align: center;
     }
 }
-@media (max-width: 600px){
-    .input{
-    margin-right: 0;
+@media (max-width: 465px){
+.header_section{
+    display: none;
     }
 }
-@media (max-width: 600px){
-    .body{
-    width: 600px;
-    overflow-x: none;
+@media (max-width: 465px){
+.menu_word{
+    margin: 0px 200px;
     }
 }
-@media (max-width: 600px){
-    .orange_word{
-    margin-left: 0;
+@media (max-width: 465px){
+.big_orange{
+    margin-top: 54px;
     }
 }
+@media (max-width: 465px){
+.menu_texst{
+    margin-top: 20px;
+    font-size: 15px;
+    }
+}
+@media (max-width: 465px){
+.close{
+    font-size: 15px;
+    }
+}
+@media (max-width: 465px){
+#okno{
+    height: 56px;
+    }
+}
+@media (max-width: 465px){
+.name{
+    padding-left: 0px;
+    width: 35%;
+    }
+}
+@media (max-width: 465px){
+.submit_main_flex{
+    margin-right: 10px;
+    }
+}
+
+
+
+
+
