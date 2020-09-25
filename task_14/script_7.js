@@ -1,13 +1,12 @@
 'use strict'
 
 let a = +prompt()
-if (a > 0) {
-    a *= (a % 10);
-    a = (a - a % 10)/100;
-    console.log(a);
+let sum = 1;
+while (a > 0) {
+    sum *= a % 10;
+    a = (a - a % 10)/ 10;
 }
+console.log(sum);
 
+document.getElementsByClassName('result')[0].innerHTML = sum;
 
-
-// document.getElementsByClassName('result')[0].innerHTML = age;
-// document.getElementsByClassName('result')[4].innerHTML = age;
