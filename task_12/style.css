@@ -1,0 +1,64 @@
+/* CSS Document */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+}
+.menu-card {
+    box-shadow: 2px 2px 2px 2px #dbdbdb;
+    overflow: auto;
+    position: relative;
+}
+.span-2{
+    grid-column: span 2;
+}
+.menu-card__menu-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-card__menu-image__image{
+    height: 200px;
+    max-width: 100%;
+    max-height: 100%; 
+}
+.menu-card__menu-name{
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px;
+}
+.menu-card__menu-name_green-color {
+    color: #639d1e;
+    font-weight: bold;
+}
+.menu-card__menu-name_bold {
+    font-weight: bold;
+}
+.menu-card__button {
+    background-color: #84bd2b;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu-card__dynamic-desc {
+    background-color: rgba(139, 190, 63, 0.774);
+    color: white;
+    position: absolute;
+    top: -400px;
+    transition: 1s;
+}
+.desc :hover ~ .menu-card__dynamic-desc {
+    top: 0px;
+}
+
+@media (max-width: 800px) {
+    .border_span-2{
+        grid-column: span 1;
+}
+}
