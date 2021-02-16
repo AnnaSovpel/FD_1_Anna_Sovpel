@@ -1,15 +1,14 @@
 const root = document.getElementById('root');
 const mainContent = document.createElement('div');
-
+const parentBtnColor = document.createElement('div')
 const btnRed = document.createElement('button');
 const btnGreen = document.createElement('button');
 const btnBlue = document.createElement('button');
 const btnPlus = document.createElement('button');
 const btnMinus = document.createElement('button');
-let content = document.createElement('div');
-let contentSize = getComputedStyle(content);
+const content = document.createElement('div');
+const contentSize = getComputedStyle(content);
 
-mainContent.classList.add('mainContent');
 btnRed.textContent = 'Red';
 btnGreen.textContent = 'Green';
 btnBlue.textContent = 'Blue';
@@ -18,15 +17,16 @@ btnMinus.textContent = '-';
 content.style.fontSize = '15px'
 content.textContent = 'This text changes color when you click on the button and changes size when you click plus or minus(or even enter from the keyboard)';
 
-function GetRedColor (){
-    content.style.color = 'red';
+function GetColor (event){
+    if(event.target.textContent == 'Red') {
+        content.style.color = 'red';
+    } else if (event.target.textContent == 'Green'){
+        content.style.color = 'green'
+    } else if (event.target.textContent == 'Blue'){
+        content.style.color = 'blue'
+    }
 }
-function GetGreenColor (){
-    content.style.color = 'green';
-}
-function GetBlueColor (){
-    content.style.color = 'blue';
-}
+
 function GetPlusSize (){
     content.style.fontSize = `${parseInt(contentSize.fontSize) + 1}px`;
 }
@@ -35,13 +35,9 @@ function GetMinusSize (){
 }
 
 function GetDisabled (event){
-    if (event.target == btnRed){
-        btnRed.disabled = true;
-    } else if (event.target == btnGreen) {
-        btnGreen.disabled = true;
-    } else if (event.target == btnBlue) {
-        btnBlue.disabled = true;
-    }
+    if (event.target == btnRed || event.target == btnGreen || event.target == btnBlue){
+        event.target.disabled = true;
+    } 
 }
 
 function TouchBtnOfSize(event) {
@@ -53,19 +49,12 @@ function TouchBtnOfSize(event) {
 }
 
 mainContent.addEventListener('click', GetDisabled)
-btnRed.addEventListener('click', GetRedColor);
-btnGreen.addEventListener('click', GetGreenColor);
-btnBlue.addEventListener('click', GetBlueColor);
+parentBtnColor.addEventListener('click', GetColor)
 btnPlus.addEventListener('click', GetPlusSize);
 btnMinus.addEventListener('click', GetMinusSize);
 document.addEventListener('keypress', TouchBtnOfSize);
 
-mainContent.append(btnRed);
-mainContent.append(btnGreen);
-mainContent.append(btnBlue);
-mainContent.append(btnPlus);
-mainContent.append(btnMinus);
-mainContent.append(content);
-
+mainContent.append (parentBtnColor, btnPlus, btnMinus, content);
+parentBtnColor.append (btnRed, btnGreen, btnBlue)
 
 root.append(mainContent);
